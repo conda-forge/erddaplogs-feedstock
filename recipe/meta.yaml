@@ -1,5 +1,5 @@
 {% set name = "erddaplogs" %}
-{% set version = "0.0.4" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erddaplogs-{{ version }}.tar.gz
-  sha256: b87aab03bb1b0e324d278553e0356804fd23d93f4d00def8c1f28d4e1cc619d0
+  sha256: 61d5288db194e35c5238071dd47640e2b9c790f7f1a543cc21b91b06bbd56877
 
 build:
   noarch: python
