@@ -1,5 +1,5 @@
 {% set name = "erddaplogs" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erddaplogs-{{ version }}.tar.gz
-  sha256: 61d5288db194e35c5238071dd47640e2b9c790f7f1a543cc21b91b06bbd56877
+  sha256: 627f0913b4efabe4ae8ca42c277d49e3ccd2160265ba9b906e974072caf1c57d
 
 build:
   noarch: python
@@ -24,9 +24,8 @@ requirements:
   run:
     - python >=3.8
     - requests
-    - pandas
-    - polars >=1.0.0
-    - numpy <2
+    - polars >=1.1.0
+    - numpy
     - pyarrow
     - user-agents
 
